@@ -10,7 +10,9 @@ import com.demo.employeeimp.EmployeImp;
 @Configuration
 @ComponentScan(basePackages="com.demo")
 public class AppConfig {
-	
+	//@@Configuration will tell that exactly what need to do eg
+	// This 	@Bean bean(class)return  the instance of EmployeImp()
+	//
 	@Bean
 	Employee getEmployee() {
 		return new EmployeImp();

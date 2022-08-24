@@ -13,7 +13,7 @@ public class Company {
 	private String comapanyname;
 	private String address;
 	
-
+    // mention the dependency which depends on Company 
 	private Employee empl;
 	//setter based  DI injection
 
