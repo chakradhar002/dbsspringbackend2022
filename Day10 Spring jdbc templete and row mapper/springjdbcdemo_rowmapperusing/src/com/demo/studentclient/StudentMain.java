@@ -5,13 +5,13 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import com.demo.student.Student;
-import com.demo.studentinter.StudentDAO;
+import com.demo.studentDAO.StudentDAO;
 
 public class StudentMain {
 
 	public static void main(String[] args) {
 		ApplicationContext a = new ClassPathXmlApplicationContext("applicationcontext.xml");
-		StudentDAO s = (StudentDAO) a.getBean("StudentDAO");
+		StudentDAO s = (StudentDAO) a.getBean("studentDao");
 		// inserting record from client
 		s.create("ram", 32);
 		s.create("tom", 17);
